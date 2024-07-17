@@ -255,11 +255,51 @@ header {
     color: rgba(255, 255, 255, 0.5);
 }
 
+/* Run section style */
+
+.run-section {
+    width: 80%;
+    background: rgba(34, 34, 34, 1);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px;
+}
+
+.run-text {
+    max-width: 445px;
+    margin: 40px 54px;
+}
+
+.run-text h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.run-text p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 34px;
+}
+
+.run-img {
+    width: 370px;
+    height: 320px;
+    border-radius: 18px;
+    margin: 30px 32px;
+    background-image: url("../images/run.jpg");
+    background-position: 67% 32%;
+    background-repeat: no-repeat;
+}
 
 @media screen and (max-width:576px) {
 
     
-    .nav-banner, .nav-bar ,.habit-section {
+    .nav-banner, .nav-bar ,.habit-section ,.run-section{
         width: 90%;
     }
     
@@ -272,7 +312,7 @@ header {
         display: block;
     }
 
-    .nav-banner {
+    .nav-banner,.run-section {
         flex-direction: column;
     }
 
@@ -338,5 +378,18 @@ header {
 
     .habit-cards {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .run-text {
+        margin: 20px;
+    }
+
+    .fix-btn-1 {
+        width: 100%;
+    }
+
+    .run-img {
+        width: 90%;
+        background-size: cover;
     }
 }
