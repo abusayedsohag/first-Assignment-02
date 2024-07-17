@@ -7,7 +7,7 @@
 
 body {
     font-family: "Inter", sans-serif;
-    background: rgba(0, 0, 0, 1);
+    /* background: rgba(0, 0, 0, 1); */
 }
 
 * {
@@ -15,29 +15,26 @@ body {
     padding: 0;
 }
 
-.btn-1 {
-    background: rgba(230, 83, 60, 1);
-    border-style: none;
-    border-radius: 40px;
-    padding: 16px 40px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 1);
-}
-
 /* nav-bar */
 
 header {
-    background: linear-gradient(180deg, rgba(49, 21, 21, 0) 0%, rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
 }
 
 .nav-bar {
-    width: 75%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding-top: 55px;
     padding-bottom: 35px;
+    margin-bottom: 95px;
+}
+
+.nav-bar i {
+    color: #fff;
+    display: none;
+    margin: auto 0;
 }
 
 .nav-bar .logo {
@@ -72,9 +69,8 @@ header {
 .nav-banner {
     display: flex;
     justify-content: space-between;
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
-    align-items: center;
 }
 
 .nav-banner-text {
@@ -88,6 +84,7 @@ header {
     font-weight: 900;
     width: 85%;
     line-height: 6.2rem;
+    margin-bottom: 28px;
 }
 
 .nav-banner-text h1 span {
@@ -103,15 +100,34 @@ header {
     margin-bottom: 28px;
 }
 
+.btn-1 {
+    background: rgba(230, 83, 60, 1);
+    border: 1px solid rgba(230, 83, 60, 1);
+    border-radius: 40px;
+    padding: 16px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-1 .mobile {
+    display: none;
+}
+
 #btn-1_1 {
     background: transparent;
     border: 1px solid white;
     margin-left: 10px;
+    border-radius: 40px;
+    padding: 16px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
 }
 
 .nav-banner-img {
     position: relative;
-    color: #ffffff;
+    color: #fff;
     display: flex;
 }
 
@@ -154,10 +170,9 @@ header {
 .img-text-board_2 {
     position: absolute;
     align-items: center;
-    padding: 25px 40px;
+    padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    width: 160px;
     background: transparent;
     backdrop-filter: blur(10px);
     bottom: 330px;
@@ -174,5 +189,79 @@ header {
     color: rgba(255, 255, 255, 0.65);
     font-size: 0.8rem;
     font-weight: 400;
-    word-spacing: 5px;
+    word-spacing: 4px;
+    width: 150px;
+}
+
+@media screen and (max-width:576px) {
+    
+    .nav-btn {
+        display: none;
+        
+    }
+
+    .nav-bar i {
+        display: block;
+    }
+
+    .nav-banner {
+        flex-direction: column;
+    }
+
+    .nav-banner-text h1 {
+        font-size: 2.25rem;
+        font-weight: 900;
+        line-height: 2.5rem;
+    }
+
+    .nav-banner-text h1 span {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    .btn-1 {
+        padding: 16px 18px;
+    }
+
+    .btn-1 .desktop {
+        display: none;
+    }
+
+    .btn-1 .mobile {
+        display: inline;
+    }
+
+    #btn-1_1 {
+        margin: 0;
+        padding: 16px 18px;
+    }
+
+    .img-text-board_2 {
+        width: 100px;
+        bottom: 380px;
+        left: 180px;
+    }
+
+    .img-text-board_2 h3 {
+        font-size: 1.9rem;
+    }
+    
+    .img-text-board_2 p {
+        font-size: 0.6rem;
+    }
+
+    .img-text-board_1 {
+        padding: 20px;
+        width: 150px;
+        right: 140px;
+        top: 250px;
+    }
+    
+    .img-text-board_1 h3 {
+        font-size: 1.2rem;
+    }
+    
+    .img-text-board_1 > h3 > span {
+        font-size: 0.75rem;
+    }
 }
