@@ -7,7 +7,7 @@
 
 body {
     font-family: "Inter", sans-serif;
-    /* background: rgba(0, 0, 0, 1); */
+    background: rgba(0, 0, 0, 1);
 }
 
 * {
@@ -18,7 +18,7 @@ body {
 /* nav-bar */
 
 header {
-    background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(180deg, #3b3b3b 0%, rgba(119, 119, 119, 0) 100%);
 }
 
 .nav-bar {
@@ -142,7 +142,7 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     width: 220px;
-    background: transparent;
+    background: rgba(48, 48, 48, 0.54);
     backdrop-filter: blur(10px);
     right: 240px;
     top: 420px;
@@ -173,7 +173,7 @@ header {
     padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    background: transparent;
+    background: rgba(48, 48, 48, 0.54);
     backdrop-filter: blur(10px);
     bottom: 330px;
     left: 250px;
@@ -194,6 +194,11 @@ header {
 }
 
 @media screen and (max-width:576px) {
+
+    
+    .nav-banner, .nav-bar {
+        width: 90%;
+    }
     
     .nav-btn {
         display: none;
@@ -220,7 +225,7 @@ header {
     }
 
     .btn-1 {
-        padding: 16px 18px;
+        padding: 16px 20px;
     }
 
     .btn-1 .desktop {
@@ -232,8 +237,7 @@ header {
     }
 
     #btn-1_1 {
-        margin: 0;
-        padding: 16px 18px;
+        padding: 16px 20px;
     }
 
     .img-text-board_2 {
@@ -253,7 +257,7 @@ header {
     .img-text-board_1 {
         padding: 20px;
         width: 150px;
-        right: 140px;
+        right: 160px;
         top: 250px;
     }
     
