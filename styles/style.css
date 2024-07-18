@@ -300,6 +300,7 @@ header {
     color: #fff;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 85px;
 }
 
 .bmi-header {
@@ -401,11 +402,141 @@ input::placeholder {
 }
 
 
+/* Meet team section styles */
+
+.meet-team {
+    margin-bottom: 85px;
+}
+
+.meet-team-header {
+    max-width: 870px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.meet-team-header h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 14px;
+}
+
+.meet-team-header p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 60px;
+}
+
+.meet-team-profile {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.meet-team-profile h3 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 3px;
+}
+
+.meet-team-profile p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.profile-1 {
+    width: 450px;
+    height: 350px;
+    border-radius: 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/trainer1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.profile-2 {
+    width: 450px;
+    height: 350px;
+    border-radius: 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/trainer2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.profile-3 {
+    width: 450px;
+    height: 350px;
+    border-radius: 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/trainer3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.profile-4 {
+    width: 450px;
+    height: 350px;
+    border-radius: 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/trainer4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.profile-5 {
+    width: 450px;
+    height: 350px;
+    border-radius: 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/trainer5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.profile-6 {
+    width: 450px;
+    height: 350px;
+    border-radius: 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/trainer6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.profile-text {
+    padding: 15px 20px;
+}
+
+
+/* footer bar */
+
+
+
 
 @media screen and (max-width:576px) {
 
     
-    .nav-banner, .nav-bar ,.habit-section ,.run-section, .bmi-header {
+    .nav-banner, .nav-bar ,.habit-section ,.run-section, .bmi-header,.profile-1,.profile-2,.profile-3,.profile-4,.profile-5,.profile-6 {
         width: 90%;
     }
     
@@ -529,4 +660,11 @@ input::placeholder {
     .form {
         grid-template-columns: repeat(2 ,calc(50% - 5px));
     }
+
+    .meet-team {
+        margin: 20px;
+    }
+
+    .profile-4 {
+        background-position-x: center;
 }
