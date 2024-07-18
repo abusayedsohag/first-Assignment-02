@@ -38,7 +38,7 @@ header {
     margin: auto 0;
 }
 
-.nav-bar .logo {
+.logo {
     font-size: 2.25rem;
     font-weight: 800;
     color: rgba(230, 83, 60, 1);
@@ -530,13 +530,82 @@ input::placeholder {
 
 /* footer bar */
 
+.footer-section {
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    height: 490px;
+}
 
+.footer {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.footer-logo {
+    width: 50%;
+}
+.logo-size {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 80%;
+}
+
+.footer-contact {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-service li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer-service a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.footer-service h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+hr {
+    max-width: 75%;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.copyright {
+    width: 75%;
+    margin: 35px auto;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
 
 
 @media screen and (max-width:576px) {
 
     
-    .nav-banner, .nav-bar ,.habit-section ,.run-section, .bmi-header,.profile-1,.profile-2,.profile-3,.profile-4,.profile-5,.profile-6 {
+    .nav-banner, .nav-bar ,.habit-section ,.run-section, .bmi-header,.profile-1,.profile-2,.profile-3,.profile-4,.profile-5,.profile-6,.footer,.footer-logo, .footer-contact {
         width: 90%;
     }
     
@@ -667,4 +736,19 @@ input::placeholder {
 
     .profile-4 {
         background-position-x: center;
+    }
+
+    .footer-section {
+        height: 1500px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+    }
 }
